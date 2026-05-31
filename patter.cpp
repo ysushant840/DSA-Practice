@@ -1,4 +1,4 @@
-// print  solide rectangle
+    // print  solide rectangle
       // *****
       // *****
       // *****
@@ -23,12 +23,15 @@
 
 
 
+
+
+
     // print  Square Pattern
-      // * * * * *
-      // * * * * *
     //   * * * * *
     //   * * * * *
-    //   * * * * * *
+    //   * * * * *
+    //   * * * * *
+    //   * * * * * 
 
     // #include<iostream>
     // using namespace std;
@@ -49,15 +52,20 @@
 
 
 
+
+
+
+
+
     // enter the number to print pattern
 
 
     // print  Square Pattern
-      // * * * * *
-      // * * * * *
     //   * * * * *
     //   * * * * *
-    //   * * * * * *
+    //   * * * * *
+    //   * * * * *
+    //   * * * * * 
 
     // #include<iostream>
     // using namespace std;
@@ -83,6 +91,9 @@
 
 
 
+
+
+
     // #include<iostream>
     // using namespace std;
     // int main ()
@@ -102,41 +113,97 @@
     //     }
     //     return 0;
     // }
+
+
+
 
 
 
 
 //  Hollow Square Pattern Program in C++
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int i, j;
+
+//     for(i=0; i<5; i=i+1)
+//     {
+//         if(i==0 || i==4)
+//         {
+//             for(j=0; j<5; j=j+1)
+//             {
+//                 cout<<"* ";
+//             }
+//         }
+//         else
+//         {
+//             cout<<"*";
+
+//             for(j=0; j<7; j=j+1)
+//             {
+//                 cout<<" ";
+//             }
+
+//             cout<<"*";
+//         }
+
+//         cout<<endl;
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+// enter by user to print hollow square /rectangle
+
+
 #include<iostream>
 using namespace std;
 
 int main()
 {
-    int i, j;
+    int rowCount, colCount;
 
-    for(i=0; i<5; i=i+1)
+    cin >> rowCount;
+    cin >> colCount;
+
+    // Hollow Rectangle
+    for(int row = 0; row < rowCount; row++)
     {
-        if(i==0 || i==4)
+        // First row or Last row
+        if(row == 0 || row == rowCount - 1)
         {
-            for(j=0; j<5; j=j+1)
+            for(int col = 0; col < colCount; col++)
             {
-                cout<<"* ";
+                cout << "* ";
             }
         }
         else
         {
-            cout<<"*";
+            // First star
+            cout << "* ";
 
-            for(j=0; j<7; j=j+1)
+            // Spaces
+            for(int i = 0; i < colCount - 2; i++)
             {
-                cout<<" ";
+                cout << "  ";
             }
 
-            cout<<"*";
+            // Last star
+            cout << "* ";
         }
 
-        cout<<endl;
+        cout << endl;
     }
 
     return 0;
 }
+
+
