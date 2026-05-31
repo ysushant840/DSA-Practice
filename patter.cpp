@@ -164,46 +164,195 @@
 // enter by user to print hollow square /rectangle
 
 
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int rowCount, colCount;
+
+//     cin >> rowCount;
+//     cin >> colCount;
+
+//     // Hollow Rectangle
+//     for(int row = 0; row < rowCount; row++)
+//     {
+//         // First row or Last row
+//         if(row == 0 || row == rowCount - 1)
+//         {
+//             for(int col = 0; col < colCount; col++)
+//             {
+//                 cout << "* ";
+//             }
+//         }
+//         else
+//         {
+//             // First star
+//             cout << "* ";
+
+//             // Spaces
+//             for(int i = 0; i < colCount - 2; i++)
+//             {
+//                 cout << "  ";
+//             }
+
+//             // Last star
+//             cout << "* ";
+//         }
+
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+// half pyramid input enter by user
+
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+// int i,j,n;
+// cin>>n;
+// for(i=0; i<n; i=i+1)
+// {
+//   for(j=0; j<i+1; j=j+1){
+//     cout<<" * ";
+//   }
+//   cout<<endl;
+// } 
+// return 0;
+// }
+
+
+
+
+
+
+
+// // Reverse Right Triangle Pattern
+
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int i, j, n;
+//     cin >> n;
+
+//     for(i = 0; i < n; i = i + 1)
+//     {
+//         for(j = 0; j < n - i; j = j + 1)
+//         {
+//             cout << " * ";
+//         }
+
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+// Star Diamond Half Pattern
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int i, j, n;
+//     cin >> n;
+
+//     // Increasing Triangle
+//     for(i = 0; i < n; i++)
+//     {
+//         for(j = 0; j < i + 1; j++)
+//         {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+
+//     // Decreasing Triangle
+//     for(i = 0; i < n; i++)
+//     {
+//         for(j = 0; j < n - i; j++)
+//         {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+// numeric Half Pyramid
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4 
+// 1 2 3 4 5
+
 #include<iostream>
 using namespace std;
 
 int main()
 {
-    int rowCount, colCount;
+    int i, j, n;
+    cin >> n;
 
-    cin >> rowCount;
-    cin >> colCount;
-
-    // Hollow Rectangle
-    for(int row = 0; row < rowCount; row++)
+    for(i = 0; i < n; i = i + 1)
     {
-        // First row or Last row
-        if(row == 0 || row == rowCount - 1)
+        for(j = 0; j < i + 1; j = j + 1)
         {
-            for(int col = 0; col < colCount; col++)
-            {
-                cout << "* ";
-            }
+            cout << j + 1 << " ";
         }
-        else
-        {
-            // First star
-            cout << "* ";
-
-            // Spaces
-            for(int i = 0; i < colCount - 2; i++)
-            {
-                cout << "  ";
-            }
-
-            // Last star
-            cout << "* ";
-        }
-
         cout << endl;
     }
 
     return 0;
 }
-
-
