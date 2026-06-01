@@ -337,20 +337,62 @@
 // 1 2 3 4 
 // 1 2 3 4 5
 
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int i, j, n;
+//     cin >> n;
+
+//     for(i = 0; i < n; i = i + 1)
+//     {
+//         for(j = 0; j < i + 1; j = j + 1)
+//         {
+//             cout << j + 1 << " ";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+// fully pyramid
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+
+
 #include<iostream>
 using namespace std;
 
 int main()
 {
-    int i, j, n;
+    int row, col, n;
     cin >> n;
 
-    for(i = 0; i < n; i = i + 1)
+    for(row = 0; row < n; row++)
     {
-        for(j = 0; j < i + 1; j = j + 1)
+        // Spaces
+        for(col = 0; col < n-row-1; col++)
         {
-            cout << j + 1 << " ";
+            cout << " ";
         }
+
+        // Stars
+        for(col = 0; col < 2*row+1; col++)
+        {
+            cout << "*";
+        }
+
         cout << endl;
     }
 
