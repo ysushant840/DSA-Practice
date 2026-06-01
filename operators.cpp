@@ -11,13 +11,7 @@
 // | 7   | Conditional (Ternary) Operator  | `?:`                    |               |    |
 // | 8   | Special/Miscellaneous Operators | `sizeof`, `,`, `&`, `*` |               |    |
 
-// ### Short Note for Copy
 
-// ```text
-// Types of Operators in C++
-
-// 1. Arithmetic Operators
-//    +  -  *  /  %
 
 // 2. Relational Operators
 //    ==  !=  >  <  >=  <=
@@ -28,8 +22,6 @@
 // 4. Assignment Operators
 //    =  +=  -=  *=  /=
 
-// 5. Increment/Decrement
-//    ++  --
 
 
 
@@ -48,30 +40,60 @@
 // 1. Arithmetic Operators
 //    +  -  *  /  %
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int a,b;
+
+//     cout << "Enter first number: ";
+//     cin >> a;
+
+//     cout << "Enter second number: ";
+//     cin >> b;
+
+//     cout << "\nAddition = " << a + b << endl;
+//     cout << "Subtraction = " << a - b << endl;
+//     cout << "Multiplication = " << a * b << endl;
+   
+//       cout << "Division = " << a / b << endl;
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+// 5. Increment/Decrement
+//    ++  --
+// ++a  -> First Increase, Then Use
+// a++  -> First Use, Then Increase
+
+// --a  -> First Decrease, Then Use
+// a--  -> First Use, Then Decrease
+
+// Pre  = Change First
+// Post = Use First
+
+
+#include<iostream>
 using namespace std;
 
-int main() {
-    int a,b;
+int main()
+{
+    int a = 5;
+    int b=9;
 
-    cout << "Enter first number: ";
-    cin >> a;
-
-    cout << "Enter second number: ";
-    cin >> b;
-
-    cout << "\nAddition = " << a + b << endl;
-    cout << "Subtraction = " << a - b << endl;
-    cout << "Multiplication = " << a * b << endl;
-   
-      cout << "Division = " << a / b << endl;
-
+    cout << (++a)<< endl;
+    cout<<(a++)<<endl;
+    cout<<(--b)<<endl;
+    cout<<(b--)<<endl;
     return 0;
 }
-
-
-
-
 
 
 
