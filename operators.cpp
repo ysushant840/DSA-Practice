@@ -80,20 +80,20 @@
 // Post = Use First
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main()
-{
-    int a = 5;
-    int b=9;
+// int main()
+// {
+//     int a = 5;
+//     int b=9;
 
-    cout << (++a)<< endl;
-    cout<<(a++)<<endl;
-    cout<<(--b)<<endl;
-    cout<<(b--)<<endl;
-    return 0;
-}
+//     cout << (++a)<< endl;
+//     cout<<(a++)<<endl;
+//     cout<<(--b)<<endl;
+//     cout<<(b--)<<endl;
+//     return 0;
+// }
 
 
 
@@ -128,3 +128,41 @@ int main()
 
 
  
+
+// break    -> Loop ko turant terminate karta hai.
+
+// continue -> Current iteration skip karke
+//             next iteration par jata hai.
+
+// break Example:
+// 1 2 3 4
+
+// continue Example:
+// 1 2 3 4 6 7 8 9 10
+
+
+
+
+
+// Break
+
+#include<iostream>
+using namespace std;
+int main ()
+{
+  int i;
+  for(i=0;i<=10; i++)
+  {
+    if (i==5)
+    {
+      break;
+    }
+     cout<< i << " " <<endl;
+  }
+  return 0;
+}
+
+
+
+
+
