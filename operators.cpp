@@ -31,8 +31,7 @@
 // 5. Increment/Decrement
 //    ++  --
 
-// 6. Bitwise Operators
-//    &  |  ^  ~  <<  >>
+
 
 // 7. Conditional Operator
 //    ?:
@@ -45,28 +44,62 @@
 
 
 
-// Bitwise operators
 
-#include<iostream>
+// 1. Arithmetic Operators
+//    +  -  *  /  %
+
+#include <iostream>
 using namespace std;
 
-int main()
-{
-    
-    // int a = 5;
-    // int b = 3;
-
+int main() {
     int a,b;
-    cin>>a>>b;
-    cout<<"AND = "<<(a&b)<<endl;
-    cout<<"OR = "<<(a|b)<<endl;
-    cout<<"NOR ="<<(~a)<<endl;
-    cout<<"XOR="<<(a^b)<<endl;
-    cout<<"left sift ="<<(a<<1)<<endl;
-    cout << "Right Shift = " << (a >> 1) << endl;
+
+    cout << "Enter first number: ";
+    cin >> a;
+
+    cout << "Enter second number: ";
+    cin >> b;
+
+    cout << "\nAddition = " << a + b << endl;
+    cout << "Subtraction = " << a - b << endl;
+    cout << "Multiplication = " << a * b << endl;
+   
+      cout << "Division = " << a / b << endl;
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+// 6. Bitwise Operators
+//    &  |  ^  ~  <<  >>
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+    
+//     // int a = 5;
+//     // int b = 3;
+
+//     int a,b;
+//     cin>>a>>b;
+//     cout<<"AND = "<<(a&b)<<endl;
+//     cout<<"OR = "<<(a|b)<<endl;
+//     cout<<"NOR ="<<(~a)<<endl;
+//     cout<<"XOR="<<(a^b)<<endl;
+//     cout<<"left sift ="<<(a<<1)<<endl;
+//     cout << "Right Shift = " << (a >> 1) << endl;
+
+//     return 0;
+// }
 
 
 
