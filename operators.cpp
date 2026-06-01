@@ -170,20 +170,74 @@
 
 // continue
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//   int i;
+//   for(i=0; i<=20; i++){
+//     if(i==7){
+//       continue;
+//     }
+//     cout<< i << " " <<endl;
+//   }
+//   return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Switch Case in C++
+
 #include<iostream>
 using namespace std;
+
 int main()
 {
-  int i;
-  for(i=0; i<=20; i++){
-    if(i==7){
-      continue;
+    int a, b;
+    char op;
+
+    cout << "Enter first number: ";
+    cin >> a;
+
+    cout << "Enter operator (+,-,*,/): ";
+    cin >> op;
+
+    cout << "Enter second number: ";
+    cin >> b;
+
+    switch(op)
+    {
+        case '+':
+            cout << "Result = " << a + b;
+            break;
+
+        case '-':
+            cout << "Result = " << a - b;
+            break;
+
+        case '*':
+            cout << "Result = " << a * b;
+            break;
+
+        case '/':
+            cout << "Result = " << a / b;
+            break;
+
+        default:
+            cout << "Invalid Operator";
     }
-    cout<< i << " " <<endl;
-  }
-  return 0;
+
+    return 0;
 }
-
-
-
 
