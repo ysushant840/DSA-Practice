@@ -5,7 +5,7 @@ int main()
 {
     int day;
 
-    cout << "Enter day number (1-7): ";
+    cout << "Enter day number (1-9): ";
     cin >> day;
 
     switch(day)
@@ -14,7 +14,7 @@ int main()
             cout << "Monday";
             break;
 
-        case 2:
+        case 9:
             cout << "Tuesday";
             break;
 
