@@ -1,20 +1,26 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-float cicle_area(float radius)
+void oddeven(int n)
 {
-    float area = 3.14 * radius * radius;
-    return area;
+    if(n % 2 == 0)
+    {
+        cout << "It is Even";
+    }
+    else
+    {
+        cout << "It is Odd";
+    }
 }
 
 int main()
 {
-    float radius;
+    int n;
 
-    cout << "Enter the radius: ";
-    cin >> radius;
+    cout << "Enter the number: ";
+    cin >> n;
 
-    cout << "Area of circle is " << cicle_area(radius) << endl;
+    oddeven(n);
 
     return 0;
 }
