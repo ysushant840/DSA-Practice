@@ -17,10 +17,23 @@
 
 
 
+// #include<iostream>
+// using namespace std;
+// int arr []={1,2,3,4,5};
+
+// int main(){
+//     cout<< arr [1]<<endl;
+// }
+
+
+
+
+
 #include<iostream>
 using namespace std;
-int arr []={1,2,3,4,5};
-
+int arr[]={2,3,4,5,6,7};
 int main(){
-    cout<< arr [1]<<endl;
+    for(int i=0; i<6; i++){
+        cout<< arr[i]<<" ";
+    }
 }
