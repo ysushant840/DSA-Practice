@@ -1,26 +1,60 @@
-// without function code 
 #include<iostream>
 using namespace std;
-int main (){
+int main(){
     int arr[5]={10,20,30,40,50};
     int key;
     cin>>key;
-
-    bool found=false;
+     
+    bool found =false;
     for(int i=0;i<5;i++){
         if(arr[i]==key){
             found=true;
             break;
         }
     }
-    if (found) {
-        cout<<"element found";
+    if(found){
+        cout<<"found";
     }
     else{
-        cout<<"Not found";
+        cout<<"not found";
     }
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// // without function code 
+// #include<iostream>
+// using namespace std;
+// int main (){
+//     int arr[5]={10,20,30,40,50};
+//     int key;
+//     cin>>key;
+
+//     bool found=false;
+//     for(int i=0;i<5;i++){
+//         if(arr[i]==key){
+//             found=true;
+//             break;
+//         }
+//     }
+//     if (found) {
+//         cout<<"element found";
+//     }
+//     else{
+//         cout<<"Not found";
+//     }
+//     return 0;
+// }
 
 
 
