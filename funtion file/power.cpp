@@ -10,4 +10,16 @@ int main (){
     }
     cout<<" ans is "<< ans << endl;
     return 0;
+
+
+
+    int c,d;
+    cin>>c>>d;
+    int ams=1;
+    for(int i=1;i<=d; i++){
+        ans = ans *c;
+
+    }
+    cout<<" ans is "<< ans << endl;
+    return 0;
 }
