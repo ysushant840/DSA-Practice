@@ -75,4 +75,3 @@ int main()
     cout << "nCr = " << nCr(n, r) << endl;
 
     return 0;
-}
