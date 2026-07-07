@@ -1,4 +1,4 @@
-// #include <iostream>
+#include <iostream>
 // using namespace std;
 
 // int binarySearch(int arr[], int key, int size) {
@@ -35,41 +35,3 @@
 
 //     return 0;
 // }
-
-
-
-
-
-
-// without function 
-#include <iostream>
-using namespace std;
-
-int main() {
-    int arr[6] = {2, 3, 4, 5, 8, 9};
-    int size = 6;
-    int key = 8;
-
-    int start = 0;
-    int end = size - 1;
-    int mid = start + (end - start) / 2;
-
-    while (start <= end) {
-        if (arr[mid] == key) {
-            cout << "Element found at index: " << mid << endl;
-            return 0;
-        }
-
-        if (key > arr[mid]) {
-            start = mid + 1;
-        } else {
-            end = mid - 1;
-        }
-
-        mid = start + (end - start) / 2;
-    }
-
-    cout << "Element not found" << endl;
-
-    return 0;
-}
