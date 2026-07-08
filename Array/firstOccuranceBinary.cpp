@@ -3,25 +3,25 @@ using namespace std;
 
 int firstOccurance(int arr[], int n, int key) {
 
-    int s = 0;
-    int e = n - 1;
-    int mid = s + (e - s) / 2;
+    int start = 0;
+    int end= n - 1;
+    int mid = start + (end - start) / 2;
     int ans = -1;
 
-    while (s <= e) {
+    while (start <= end) {
 
         if (key == arr[mid]) {
             ans = mid;
-            e = mid - 1;
+            end = mid - 1;
         }
         else if (key > arr[mid]) {
-            s = mid + 1;
+            start = mid + 1;
         }
         else {
-            e = mid - 1;
+            end = mid - 1;
         }
 
-        mid = s + (e - s) / 2;
+        mid = start + (end - start) / 2;
     }
 
     return ans;
